@@ -2,3 +2,6 @@
     outline: 1px solid red;
     /*background: red;*/
 }
+#header {
+    height: 100vh;
+}
