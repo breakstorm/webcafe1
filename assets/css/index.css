@@ -1,7 +1,346 @@
 * {
-    outline: 1px solid red;
+    outline: 1px dotted red;
     /*background: red;*/
 }
+
+/* animation */
+@keyframes textAni {
+    0% {
+        font-size: 12px;
+        top: 0px;
+        left: 0px;
+        opacity: 0.2;
+    }
+    100% {
+        font-size: 24px;
+        top: 75px;
+        left: 400px;
+        pacity: 1;
+    }
+}
+
+@keyframes flowerAni {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* layout 작업 */
+#wrapper {
+    background: #fff;
+    background-image: url("../img/bg_flower.png"), linear-gradient(to bottom, #c7c7c7 0%, #ffffff 70%, #ffffff 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#header, #visual, #contentsArea, #slogan, #footerInner {
+    width: 940px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 #header {
-    height: 100vh;
+    height: 110px;
+}
+
+#visual {
+    height: 120px;
+}
+
+#contentsArea {
+    min-height: 400px;
+    padding: 30px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#usefulArea {
+    width: 250px;
+}
+
+#infoArea {
+    /*width: 100%;*/
+    margin: 0 30px;
+}
+
+#linkArea {
+    width: 190px;
+}
+
+#slogan {
+    padding: 15px 0;
+}
+
+#footer {
+    padding: 15px 0;
+    background-image: linear-gradient(to bottom, #c7c7c7 0%, #ffffff 70%, #ffffff 100%);
+}
+
+/* 각 부분별 작업 */
+/* 헤더컨텐츠 */
+#header {
+    padding: 0 30px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 37px;
+    left: 60px;
+}
+
+.infoLink {
+    text-align: right;
+}
+
+.infoLink li {
+    display: inline-block;
+}
+
+.infoLink a {
+    display: inline-block;
+    padding: 8px 0 7px 3px;
+}
+
+.infoLink a:before {
+    content: ":";
+    padding-right: 8px;
+}
+
+.infoLink li:first-child a:before {
+    content: "";
+}
+
+.mainMenu {
+    border-top: 2px solid #000;
+    border-radius: 0 0 5px 5px;
+    background-image: linear-gradient(to bottom, #ffc848 0%, #ff8208 40%, #ff8208 50%, #ffc848 100%);
+    padding-left: 225px;
+    height: 45px;
+}
+
+.mainMenu li, .mainMenu a {
+    display: inline-block;
+}
+
+.mainMenu > li > a {
+    line-height: 45px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 0 20px;
+    color: #fff;
+    border-left: 1px solid #fff;
+    text-shadow: 1px 0px #000, -1px 0px #000, 0 1px #000, 0 -1px #000;
+}
+
+.mainMenu > li > a:hover, .mainMenu > li > a:focus {
+    color: #ff0;
+}
+
+.mainMenu > li > a :hover:after, .mainMenu > li > a:focus:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+}
+
+.mainMenu > li {
+    position: relative;
+}
+
+.mainMenu ul {
+    position: absolute;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+.mainMenu ul a {
+    padding: 8px 0 7px 15px;
+}
+
+.mainMenu ul a:before {
+    font-family: webcafeIcon;
+    content: "r";
+    color: #666666;
+    position: relative;
+    top: 2px;
+}
+
+.mainMenu ul a:hover:before, .mainMenu ul a:focus:before {
+    content: "c";
+    color: #ff0000;
+}
+
+.mainMenu ul > li {
+    display: block;
+}
+
+.aboutHtml {
+    left: 0;
+}
+
+.aboutCss {
+    /*left: -60px;*/
+    left: 0;
+}
+
+.webStandard {
+    /*display: none;*/
+    left: 0;
+}
+
+.webAccessbility {
+    /*display: none;*/
+    left: 0;
+}
+
+.qna {
+    /*display: none;*/
+    left: 0;
+}
+
+.archive {
+    /*display: none;*/
+    left: 0;
+}
+
+/* visual 부분 */
+#visual {
+    position: relative;
+}
+
+#visual:before, #visual:after {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    content: "";
+    /*background: #f00;*/
+    animation: flowerAni 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#visual:before {
+    background-image: url("../img/ani_flower_01.png"), url("../img/ani_flower_02.png");
+    background-repeat: no-repeat;
+    background-position: 0 5px, 670px 0;
+}
+
+#visual:after {
+    background-image: url("../img/ani_flower_03.png"), url("../img/ani_flower_04.png");
+    background-repeat: no-repeat;
+    background-position: 300px 35px, 800px 65px;
+    animation-delay: 1s;
+}
+
+#visual p {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 75px;
+    left: 400px;
+    animation: textAni 1s;
+}
+
+
+/* slogan 부분*/
+#slogan {
+    position: relative;
+}
+
+#slogan h1 {
+    position: absolute;
+    bottom: -25px;
+    left: 30px;
+    width: 110px;
+    height: 90px;
+    background: url("../img/coffee.png") no-repeat;
+    background-size: 110px 90px;
+    white-space: nowrap;
+    text-indent: 110px;
+    overflow: hidden;
+}
+
+#slogan p {
+    margin: 0 100px 0 200px;
+    color: #a09784;
+    font-size: 13px;
+}
+
+#slogan q {
+    font-weight: bold;
+}
+
+#slogan q:before {
+    font-size: 36px;
+    position: relative;
+    top: 15px;
+    left: -5px;
+    color: #765725;
+}
+
+#slogan q:after {
+    content: "";
+}
+
+
+/* 푸터 영역 */
+#footerInner {
+    position: relative;
+}
+
+.guide, address, .copyright {
+    margin-left: 200px;
+    margin-right: 100px;
+}
+
+#footerLogo {
+    position: absolute;
+    left: 35px;
+    top: 45px;
+}
+
+.guide {
+    background: #7b8385;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.guide li {
+    display: inline-block;
+}
+
+.guide a {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px 10px 0;
+}
+
+.guide a:before {
+    content: "|";
+    paddding-left: 20px;
+}
+.guide li:first-child a:before {
+    content: "";
+}
+address {
+    font-style: normal;
+    margin-bottom: 5px;
+}
+address span {
+    margin-right: 10px;
+}
+.techLogoArea {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
