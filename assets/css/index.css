@@ -55,7 +55,9 @@
     padding: 30px;
     margin-bottom: 15px;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
+    background-color: #fff;
+    border-radius: 16px;
 }
 
 #usefulArea {
