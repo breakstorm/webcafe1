@@ -46,6 +46,14 @@
   background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   `
+
+`/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#e8852e+0,ed552f+35,ed552f+70,e8852e+100;custom+2 */
+background: #e8852e; /* Old browsers */
+background: -moz-linear-gradient(top,  #e8852e 0%, #ed552f 35%, #ed552f 70%, #e8852e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #e8852e 0%,#ed552f 35%,#ed552f 70%,#e8852e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #e8852e 0%,#ed552f 35%,#ed552f 70%,#e8852e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8852e', endColorstr='#e8852e',GradientType=0 ); /* IE6-9 */
+`
 ### 아이콘 
 - fontello로 사용 (http://fontello.com/)
     - b : 동그라미 
