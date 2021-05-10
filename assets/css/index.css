@@ -1,0 +1,70 @@
+/* nav component */
+.header {
+    position: relative;
+    border-radius: 0 0 12px 12px;
+    padding: 0 15px;
+}
+.header-logo {
+    position: absolute;
+    top: 36px;
+    left: 64px;
+}
+.top-menu > ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.top-menu-item::before {
+    content: ":";
+    margin: 0 1em;
+}
+.top-menu-item:first-of-type::before {
+    content: "";
+}
+.top-menu-item {
+    font-size: 0.75em;
+    margin: 0.75em 0;
+}
+.nav {
+    background: #e8852e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e8852e 0%, #ed552f 35%, #ed552f 70%, #e8852e 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e8852e 0%,#ed552f 35%,#ed552f 70%,#e8852e 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e8852e 0%,#ed552f 35%,#ed552f 70%,#e8852e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-top: 2px solid #333;
+    border-radius: 0 0 4px 4px;
+}
+.nav-main {
+    list-style: none;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+.nav-main > li {
+    position: relative;
+    padding: 1em 1.4em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+}
+.nav-main > li > span{
+    padding-bottom: 14px;
+    border-bottom: 2px solid #00f;
+}
+/* sub item display none*/
+.nav-sub {
+    display: none;
+}
+.nav-sub-active {
+    list-style: star;
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 100px;
+    position: absolute;
+    bottom: -2em;
+    left: 0px;
+}
+.nav-sub-active > li {
+    font-size: 0.75em;
+    margin-right: 1em;
+}
