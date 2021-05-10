@@ -113,13 +113,15 @@
         <p>Web Standard & Accssibility</p>
     </section>
     <main class="main" id="main">
+        <h2 class="readble-hidden">메인영역</h2>
         <div class="main-left">
             <section class="login">
                 <h3>로그인</h3>
                 <form>
                     <fieldset>
-                        <label for="ID"></label><input id="ID" type="text">
-                        <label for="PW"></label><input id="PW" type="password">
+                        <legend>로그인 폼</legend>
+                        <p class="user-id"><label for="ID"></label><input id="ID" type="text" name="user ID"></p>
+                        <div class="puser-password"><label for="PW"></label><input id="PW" type="password" name="user password"></div>
                         <button type="submit">로그인</button>
                     </fieldset>
                 </form>
@@ -127,17 +129,19 @@
             </section>
             <section class="section validate">
                 <h3 class="readble-hidden">Validation Link</h3>
-                <a href="#">
-                    <p>W3C Markup Validation</p>
-                </a
-                <a href="#">
-                    <p>W3C CSS Validation Service</p>
-                </a>
+                <ul>
+                    <li><a href="#">
+                        <span>W3C Markup Validation</span>
+                    </a></li>
+                    <li><a href="#">
+                        <span>W3C CSS Validation Service</span>
+                    </a></li>
+                </ul>
             </section>
             <section class="term">
                 <h3 class="">웹 관련용어</h3>
                 <dl>
-                    <dd><img src="assets/img/validation_icon.png" alt="W3C ICON"></dd>
+                    <dd><img src="assets/img/web_standards.gif" alt="W3C ICON"></dd>
                     <dt>웹표준이란</dt>
                     <dd>W3C 단체에서 규정한 웹기술 사양에 대한 규칙을 말하며 표준 규격은 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae culpa delectus dignissimos dolore earum eos est facilis labore maxime molestias natus neque nobis quae quia, quibusdam recusandae sed velit voluptas?</dd>
                 </dl>
@@ -146,16 +150,16 @@
         <div class="main-middle">
             <section class="search">
                 <h3 class="readble-hidden">자료검색</h3>
-                <form >
+                <form>
                     <fieldset>
-                        <legen>자료검색</legen>
+                        <legend>자료검색</legend>
                         <input type="search" placeholder="검색어를 입력하세요.">
                         <button type="submit">검색</button>
                     </fieldset>
                 </form>
             </section>
-            <section class="board-wrapper">
-                <div class="board">
+            <div class="board-wrapper">
+                <section class="board">
                     <h3 class="readble-hidden">공지사항</h3>
                     <ul>
                         <li><a href="#">
@@ -179,8 +183,8 @@
                             <time datetime="2013-10-04">2013-10-04</time>
                         </a></li>
                     </ul>
-                    <button>더보기</button>
-                </div>
+                    <a href="#">더보기</a>
+                </section>
                 <div class="board">
                     <h3 class="readble-hidden">자료실</h3>
                     <ul>
@@ -205,25 +209,25 @@
                             <time datetime="2013-10-04">2013-10-04</time>
                         </a></li>
                     </ul>
-                    <button>더보기</button>
+                    <a href="#">더보기</a>
                 </div>
-            </section>
-            <article class="news">
+            </div>
+            <div class="news">
                 <h3>새소식</h3>
-                <div class="news-context">
+                <article class="news-context">
                     <figure><img src="assets/img/news.gif" alt="W3C renewal">
                         <figcaption>W3C 리뉴얼</figcaption>
                     </figure>
                     <title>W3C 사이트가 리뉴얼 되었습니다.</title>
                     <time datetime="2013-10-04">2013-10-04</time>
                     <p>디자인 및 다양한 view환경을 고려하여 구성되어 있으며, 기존보다 최신 정보를 알려줄 수 있도록 내용을 구성 하였습니다.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at aut ex, excepturi explicabo fugit hic impedit inventore itaque laboriosam modi nobis numquam quas reiciendis repellendus saepe sequi soluta vitae?</p>
-                </div>
-                <button>더보기</button>
-            </article>
+                </article>
+                <a href="#">더보기</a>
+            </div>
         </div>
         <div class="main-right">
-            <section class="related">
-                <div class="related-event">
+            <div class="related">
+                <section class="related-event">
                     <h3>신규 <em clas="text-color-orange">이벤트</em></h3>
                     <img src="assets/img/free_gift.gif" alt="gift book">
                     <p><em>웹표준 핵심 가이드북 2 출시</em> 선착순 500명 한정</p>
@@ -231,8 +235,8 @@
                         <a href="#">prev</a>
                         <a href="#">next</a>
                     </div>
-                </div>
-                <div class="related-site">
+                </section>
+                <section class="related-site">
                     <h3>관련 <em>사이트</em></h3>
                     <ul>
                         <li>제우미디어</li>
@@ -240,17 +244,17 @@
                         <li>트위터</li>
                         <li>인스타그램</li>
                     </ul>
-                </div>
-            </section>
+                </section>
+            </div>
             <section class="rank">
-                <h3>인기 <em></em></h3>
+                <h3>인기 <em>사이트</em></h3>
                 <ol>
-                    <li><span>W3C</span><span>상승</span></li>
-                    <li><span>CSS Zengard</span><span>하강</span></li>
-                    <li><span>Web Standard</span><span>유지</span></li>
-                    <li><span>웹 접근성 연구소</span><span>상승</span></li>
+                    <li><a href="#"><span>W3C</span><span>상승</span></a></li>
+                    <li><a href="#"><span>CSS Zengard</span><span>하강</span></a></li>
+                    <li><a href="#"><span>Web Standard</span><span>유지</span></a></li>
+                    <li><a href="#"><span>웹 접근성 연구소</span><span>상승</span></a></li>
                 </ol>
-                <button>더보기</button>
+                <a href="#">더보기</a>
             </section>
         </div>
     </main>
