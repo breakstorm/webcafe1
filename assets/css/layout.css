@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    background: #fff;
+    font-family: "Nanum";
+}
+.wrapper {
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 70%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 70%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.header {
+    width: 940px;
+    height: 110px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.visual {
+    height: 120px;
+    background-image: url("../img/bg_flower.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.visual::before {
+    content: " ";
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/ani_flower_01.png"),
+    url("../img/ani_flower_02.png");
+    background-position: 100px 50px,200px 0px;
+    background-repeat: no-repeat;
+
+}
+.visual::after {
+    content: " ";
+    width: 100px;
+    height: 120px;
+    background-image: url("../img/ani_flower_03.png"),
+    url("../img/ani_flower_04.png");
+    background-position: 300px 50px, 800px 0px;
+    background-repeat: no-repeat;
+}
+.main {
+    min-height: 400px;
+    padding: 30px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+.slogan {
+    margin: 15px 0;
+}
+.footer {
+    padding: 15px 0;
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
