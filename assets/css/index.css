@@ -1,3 +1,9 @@
+/* animation */
+@keyframes flowerAni{
+    0% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
 /* nav component */
 .header {
     position: relative;
@@ -91,9 +97,28 @@
 .visual {
     position: relative;
 }
+.visual::before, .visual::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    animation: flowerAni 2000ms infinite ease-in-out;
+}
+.visual::before {
+    background-image: url("../img/ani_flower_03.png"), url("../img/ani_flower_04.png");
+    background-position: 300px 0, 900px 10px;
+}
+.visual::after {
+    background-image: url("../img/ani_flower_01.png"), url("../img/ani_flower_02.png");
+    background-position: 100px 0, 800px 50px;
+    animation-delay: 1000ms;
+}
 .visual > p {
     position: absolute;
-    righit: 10%;
+    right: 10%;
     bottom: 10%;
     font-size: 1.5em;
     font-weight: bold;
@@ -108,9 +133,10 @@
     position: absolute;
     bottom: -48px;
     left: 30px;
+    z-index: 10;
 }
 .slogan > p {
-    padding-left: 200px;
+    padding-left: 160px;
     color: #2d0000;
 }
 .slogan q {
@@ -123,8 +149,11 @@
 
 
 /* footer 컴포넌트 */
-.footer {
+.footer-wrapper {
     position: relative;
+}
+.footer {
+
 }
 .footer .logo {
     position: absolute;
@@ -132,13 +161,13 @@
     bottom: 30px;
 }
 .footer .markup {
-    position: absolute;
-    right: 10px;
-    top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 1em;
 }
 .footer .footer-main {
-    padding-left: 200px;
-    padding-right: 100px;
+    z-index: 10;
+    padding-left: 160px;
 }
 .footer .footer-main .footer-main-menu {
     list-style: none;
@@ -158,6 +187,9 @@
 .footer .footer-main .footer-main-menu li:first-of-type::before {
     content: "";
     margin: 0;
+}
+.footer .footer-main .footer-main-menu li {
+    white-space: nowrap;
 }
 .footer .footer-main .footer-main-menu li a {
     color: #ccc;
@@ -179,4 +211,12 @@
 }
 .footer .copryright {
     font-size: 0.75em;
+}
+
+/* main 영역 */
+
+/* 로그인 컴포넌트 */
+.login {
+    background: #e8852e; /* Old browsers */
+    background-image: radial-gradient(circle at top right, #ed552f, #e8852e );
 }
