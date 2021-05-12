@@ -214,9 +214,136 @@
 }
 
 /* main 영역 */
-
 /* 로그인 컴포넌트 */
 .login {
-    background: #e8852e; /* Old browsers */
-    background-image: radial-gradient(circle at top right, #ed552f, #e8852e );
+    /*background: #e8852e; !* Old browsers *!*/
+    background-image: radial-gradient(circle at top right, #ed552f, #ee8522 );
+    padding: 10px;
+    border-radius: 6px;
+}
+.login h3 {
+    margin: 0 0 10px;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #cccc00;
+}
+.login .login-box {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.login form {
+    position: relative;
+}
+.login form legend {
+    display: none;
+}
+.login form fieldset {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.login form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    box-sizing: border-box;
+    padding: 4px;
+    width: 50px;
+    height: 50px;
+    background-color: #ed552f;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+}
+.login form p:first-of-type {
+    margin-bottom: 8px;
+}
+.login form label {
+    display: inline-block;
+    width: 5em;
+    font-size: 0.75em;
+}
+.login form input {
+    width: 8em;
+}
+.login .forgot {
+    margin-top: 10px;
+    font-size: 0.75em;
+    display: flex;
+    justify-content: space-between;
+    color: #000;
+}
+.login .forgot a::before {
+    font-family: webicon;
+    content: "g";
+    color: #ed552f;
+    margin-right: 0.5em;
+    vertical-align: middle;
+}
+
+
+/* validation link 컴포넌트 */
+.validate {
+    margin: 20px 0;
+}
+.validate ul {
+    list-style: none;
+}
+.validate li:first-of-type {
+    margin-bottom: 10px;
+}
+.validate li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 0 0 2em;
+    border-radius: 15px;
+    border: 1px solid #888;
+    background-color: #eee;
+    color: #ccc;
+    font-size: 0.75em;
+    font-weight: bold;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.validate li span::before {
+    content: " ";
+    background-image: url(../img/validation_icon.png);
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    top: 5px;
+    margin-right: 0.5em;
+}
+
+
+/* 웹관련용어 컴포넌트 */
+.term {
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 15px 20px;
+    background-color: #eee;
+}
+.term h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+.term dl {
+    position: relative;
+    padding-left: 70px;
+    box-sizing: border-box;
+}
+.term .term-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.term .term-title {
+    color: #0000ff;
+    margin-bottom: 1em;
 }

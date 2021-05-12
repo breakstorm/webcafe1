@@ -10,6 +10,7 @@ body {
     background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 .header {
+    box-sizing: border-box;
     width: 940px;
     height: 110px;
     margin: 0 auto;
@@ -36,17 +37,21 @@ body {
     border-radius: 1em;
     overflow: hidden;
 }
-.main {
-}
 .main-left {
     background-color: #f00;
+    flex-basis: 250px;
+    max-width: 250px;
 }
 .main-middle {
     background-color: #0f0;
     margin: 0 30px;
+    flex-basis: 380px;
+    max-width: 380px;
 }
 .main-right {
     background-color: #00f;
+    flex-basis: 190px;
+    max-width: 190px;
 }
 .slogan {
     margin: 15px auto;
