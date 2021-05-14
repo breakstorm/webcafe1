@@ -347,3 +347,193 @@
     color: #0000ff;
     margin-bottom: 1em;
 }
+
+
+/* 자료검색 컴포넌트 */
+.search fieldset {
+    position: relative;
+    border: 0;
+    border-radius: 16px 16px 0 0;
+    background: linear-gradient(to bottom, #ccc, #fff);
+    padding: 10px 20px;
+}
+.search legend {
+    display: none;
+}
+.search label::before {
+    font-family: webicon;
+    content: "z";
+    margin-right: 3px;
+    vertical-align: middle;
+}
+.search label {
+    color: #333;
+    font-size: 0.75em;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.search button {
+    background: radial-gradient(circle at top right, #888, #333);
+    border-radius: 6px;
+    padding: 3px 6px;
+    border: 0;
+    color: #fff;
+    font-size: 0.75em;
+    font-weight: bold;
+}
+.search input {
+    width: 200px;
+}
+
+/* 공지사항 및 자료실 게시판 */
+
+.board-wrapper {
+    position: relative;
+}
+.board > h3 {
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #333333;
+    border-bottom: 0;
+    border-radius: 6px 6px 0 0;
+    font-size: 0.75em;
+    font-weight: normal;
+    box-sizing: border-box;
+    padding: 0.5em 1em;
+    width: 80px;
+    text-align: center;
+}
+.board > h3:active, .board > h3:hover {
+    border: 1px solid #ff0000;
+    border-bottom: 0;
+    color: #ff0000;
+}
+.board > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /*flex-wrap: nowrap;*/
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    position: relative;
+    padding: 40px 0;
+}
+.board > ul  a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    line-height: 1.4;
+    color: #333;
+}
+.board > ul a:hover {
+    color: #f00;
+}
+.board > ul span {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.board > ul span::before {
+    content: "r";
+    font-family: webicon;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+.board .pds {
+    left: 80px;
+    top: 0;
+}
+.board > a {
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    color: #333;
+}
+.board > a:hover {
+    color: #f00;
+}
+.board > a::before {
+    content: "p";
+    font-family: webicon;
+    color: #f00;
+    margin-right: 6px;
+}
+
+.board > ul, .board > a {
+    display: none;
+}
+.board-active > ul, .board-active > a {
+    display: inherit;
+}
+
+
+/* 새소식 컴포넌트 */
+.news {
+    position: relative;
+}
+.news > h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #ed552f;
+    padding-bottom: 10px;
+}
+.news > .news-link {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+}
+.news > .news-link::before {
+    content: "p";
+    font-family: webicon;
+    vertical-align: middle;
+    color: #f00;
+}
+.news .news-context-wrapper {
+    color: #333;
+}
+.news .news-context-wrapper:hover {
+    color: #f00;
+}
+.news .news-context {
+    position: relative;
+    box-sizing: border-box;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    padding-left: 130px;
+}
+.news .news-context figure {
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.news .news-context figcaption {
+    text-align: center;
+    font-size: 0.75em;
+
+}
+.news .news-title {
+    margin-bottom: 1em;
+    font-weight: bold;
+    white-space: nowrap;
+    position: relative;
+    left: -16px;
+}
+.news .news-title::before {
+    content: "r";
+    font-family: webicon;
+    vertical-align: middle;
+
+}
+.news .news-time {
+    font-size: 0.75em;
+    margin-bottom: 1em;
+}
+.news .news-detail {
+    line-height: 1.4;
+    font-size: 0.75em;
+    font-weight: normal;
+    margin-top: 1em;
+}

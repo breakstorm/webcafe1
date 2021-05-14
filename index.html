@@ -160,14 +160,15 @@
                 <form>
                     <fieldset>
                         <legend>자료검색</legend>
-                        <input type="search" placeholder="검색어를 입력하세요.">
+                        <label for="search-input">자료검색</label>
+                        <input id="search-input" type="search" placeholder="검색어를 입력하세요.">
                         <button type="submit">검색</button>
                     </fieldset>
                 </form>
             </section>
             <div class="board-wrapper">
-                <section class="board">
-                    <h3 class="readble-hidden">공지사항</h3>
+                <section class="board board-active">
+                    <h3 class="notice">공지사항</h3>
                     <ul>
                         <li><a href="#">
                             <span>HTML 모든것을 알려주마 샘플 활용법</span>
@@ -193,7 +194,7 @@
                     <a href="#">더보기</a>
                 </section>
                 <div class="board">
-                    <h3 class="readble-hidden">자료실</h3>
+                    <h3 class="pds">자료실</h3>
                     <ul>
                         <li><a href="#">
                             <span>HTML 모든것을 알려주마 샘플 활용법</span>
@@ -221,18 +222,20 @@
             </div>
             <div class="news">
                 <h3>새소식</h3>
+                <a class="news-context-wrapper" href="">
                 <article class="news-context">
                     <figure><img src="assets/img/news.gif" alt="W3C renewal">
                         <figcaption>W3C 리뉴얼</figcaption>
                     </figure>
-                    <title>W3C 사이트가 리뉴얼 되었습니다.</title>
-                    <time datetime="2013-10-04">2013-10-04</time>
-                    <p>디자인 및 다양한 view환경을 고려하여 구성되어 있으며, 기존보다 최신 정보를 알려줄 수 있도록 내용을 구성 하였습니다. Lorem ipsum dolor sit amet,
+                    <p class="news-title">W3C 사이트가 리뉴얼 되었습니다.</p>
+                    <time class="news-time" datetime="2013-10-04">2013-10-04</time>
+                    <p class="news-detail">디자인 및 다양한 view환경을 고려하여 구성되어 있으며, 기존보다 최신 정보를 알려줄 수 있도록 내용을 구성 하였습니다. Lorem ipsum dolor sit amet,
                         consectetur adipisicing elit. Accusantium at aut ex, excepturi explicabo fugit hic impedit
                         inventore itaque laboriosam modi nobis numquam quas reiciendis repellendus saepe sequi soluta
                         vitae?</p>
                 </article>
-                <a href="#">더보기</a>
+                </a>
+                <a class="news-link" href="#">더보기</a>
             </div>
         </div>
         <div class="main-right">

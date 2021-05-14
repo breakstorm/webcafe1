@@ -38,12 +38,10 @@ body {
     overflow: hidden;
 }
 .main-left {
-    background-color: #f00;
     flex-basis: 250px;
     max-width: 250px;
 }
 .main-middle {
-    background-color: #0f0;
     margin: 0 30px;
     flex-basis: 380px;
     max-width: 380px;
