@@ -1,0 +1,22 @@
+/* font설정 */
+@font-face {
+    font-family: 'Nanum';
+    font-weight: 400;
+    src: url("../font/NanumGothicCoding.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "NanumBold";
+    font-weight: 600;
+    src: url("../font/NanumGothicCoding-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "webicon";
+    font-weight: 400;
+    src: url("../icon/webcafeIcon.eot");
+    src: url("../icon/webcafeIcon.eot#iefix") format("embedded-opentype"),
+    url("../icon/webcafeIcon.woff") format("woff"),
+    url("../icon/webcafeIcon.ttf") format("truetype"),
+    url("../icon/webcafeIcon.svg") format("svg");
+}

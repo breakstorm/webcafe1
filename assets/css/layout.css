@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    background: #fff;
+    font-family: "Nanum";
+}
+.wrapper {
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 70%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 70%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 70%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.header {
+    box-sizing: border-box;
+    width: 940px;
+    height: 110px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.visual {
+    height: 120px;
+    background-image: url("../img/bg_flower.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main {
+    min-height: 400px;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 0 auto 15px;
+    display: flex;
+    flex: 0 0 940px;
+    flex-wrap: nowrap;
+    max-width: 940px;
+    min-width: 940px;
+    border-radius: 1em;
+    overflow: hidden;
+}
+.main-left {
+    flex-basis: 250px;
+    max-width: 250px;
+}
+.main-middle {
+    margin: 0 30px;
+    flex-basis: 380px;
+    max-width: 380px;
+}
+.main-right {
+    flex-basis: 190px;
+    max-width: 190px;
+}
+.slogan {
+    margin: 15px auto;
+    max-width: 940px;
+    min-width: 940px;
+}
+.footer-wrapper {
+    padding: 15px 0;
+    background: #cccccc; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cccccc 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #cccccc 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #cccccc 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.footer {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 0 0 940px;
+    overflow: hidden;
+    max-width: 940px;
+    margin: 0 auto;
+}
