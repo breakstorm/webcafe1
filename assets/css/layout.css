@@ -47,7 +47,6 @@ body {
     max-width: 380px;
 }
 .main-right {
-    background-color: #00f;
     flex-basis: 190px;
     max-width: 190px;
 }
